@@ -6,24 +6,26 @@ using System.Threading.Tasks;
 
 namespace KnowledgeCheck1_Calculator
 {
+
+    //Put in a static class makes sense since these are only used once per program run.
     public class Calculator
     {
-        public int Add(int first, int second)
+        public static int Add(int first, int second)
         {
             return first + second;
         }
 
-        public int Subtract(int first, int second)
+        public static int Subtract(int first, int second)
         {
             return first - second;
         }
 
-        public int Multiply(int first, int second)
+        public static int Multiply(int first, int second)
         {
-            throw new NotImplementedException();
+           return first * second;
         }
 
-        public double Divide(double first, double second)
+        public static double Divide(double first, double second)
         {
             return first / second;
         }
