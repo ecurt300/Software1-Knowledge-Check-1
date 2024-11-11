@@ -28,14 +28,24 @@ namespace KnowledgeCheck1_Calculator
         {
             int convertedFirst = CalculatorHelper.ConvertToInt(first);
             int convertedSecond = CalculatorHelper.ConvertToInt(second);
-            return convertedFirst + convertedSecond;
+            return convertedFirst * convertedSecond;
         }
 
         public static double Divide(string first, string second)
         {
             double convertedFirst = CalculatorHelper.ConvertToDouble(first);
             double convertedSecond = CalculatorHelper.ConvertToDouble(second);
-            return convertedFirst / convertedSecond;
+
+
+            if (convertedSecond == 0)
+            {
+                Console.WriteLine("Cannot divide by ZERO!");
+                return 0;
+            }
+            else
+            {
+                return convertedFirst / convertedSecond;
+            }
         }
     }
 }

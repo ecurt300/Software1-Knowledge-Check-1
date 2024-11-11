@@ -88,7 +88,7 @@ namespace KnowledgeCheck1_Calculator
                         break;
 
                     case "3":
-                        // Add code here
+                       
                         Console.WriteLine("Enter 2 integers to multiply");
                         GetMultiplication();
                         break;
